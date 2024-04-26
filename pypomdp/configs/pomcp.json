@@ -1,7 +1,7 @@
 {
 	"algo": "pomcp",
 	"utility_fn": "ucb1",
-	"T": 3,
+	"T": 1,
 	"C": 10.0,
 	"simulation_time": 1.0,
 	"max_particles": 700,

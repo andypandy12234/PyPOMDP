@@ -5,6 +5,7 @@ from util.belief_tree import BeliefTree
 from logger import Logger as log
 import numpy as np
 import time
+import json
 
 MAX = np.inf
 
@@ -42,6 +43,7 @@ class POMCP(Solver):
         self.max_particles = None    # maximum number of particles can be supplied by hand for a belief node
         self.reinvigorated_particles_ratio = None  # ratio of max_particles to mutate 
         self.utility_fn = None
+        self.simulation_results = []
 
     def add_configs(self, budget=float('inf'), initial_belief=None, simulation_time=0.5,
                     max_particles=350, reinvigorated_particles_ratio=0.1, utility_fn='ucb1', C=0.5):

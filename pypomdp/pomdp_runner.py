@@ -63,7 +63,7 @@ class PomdpRunner:
         # have fun!
         log.info('''
         ++++++++++++++++++++++
-            Starting State:  {}
+            444Starting State:  {}
             Starting Budget:  {}
             Init Belief: {}
             Time Horizon: {}
